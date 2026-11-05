@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Floricultura Helide — Sertãozinho/SP</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<script src="./assets/7cb9fcec888c2c1603bf0cd80d5c1100.js"></script>
+<script src="./assets/2d6cc327520fef1bd098aac74748876f.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Instrument+Serif&amp;family=Libre+Baskerville:wght@400&amp;display=swap">
+<style>
+:root{--bg:#1C2415;--deep:#171F13;--ph:#283020;--ivory:#F1EEDF;--ivory2:#CECDBF;--gold:#AB9860;--line:rgba(171,152,96,.5);--serif:'Instrument Serif','Cormorant Garamond',Georgia,serif;--body:'Libre Baskerville',Baskerville,Georgia,serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ivory);font-family:var(--body);font-size:17px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.1;color:var(--ivory)}
+h1{font-size:60px}h2{font-size:42px}h3{font-size:26px}
+p{margin:0}
+.label{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 28px;background:var(--gold);color:var(--deep);font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;border-radius:2px;border:1px solid var(--gold);cursor:pointer;transition:background-color .25s ease,border-color .25s ease,transform .25s ease}
+.nav a,.mnav a{font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;min-height:44px;position:relative}
+.nav a::after,.mnav a::after{content:"";position:absolute;left:0;right:0;bottom:9px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.nav a:focus-visible::after,.mnav a:focus-visible::after{transform:scaleX(1)}
+@media (hover:hover) and (pointer:fine){.nav a:hover::after,.mnav a:hover::after{transform:scaleX(1)}.btn:hover{background:#B9A76C;border-color:#B9A76C;transform:translateY(-2px)}.zoom:hover img{transform:scale(1.03)}.foot a:hover{color:var(--gold)}.mob a:hover,.mob button:hover{color:var(--gold)}}
+.ph{background:var(--ph);border:1px solid var(--line);display:flex;align-items:flex-end;justify-content:center;padding:20px;text-align:center}
+.cap{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory2)}
+.hdr{position:absolute;top:0;left:0;right:0;z-index:5;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:28px 56px}
+.brand{text-align:center;display:block;line-height:1}
+.brand b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;color:var(--gold)}
+.brand span{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--ivory);margin-top:2px}
+.nav{display:flex;gap:28px}.nav.r{justify-content:flex-end}
+.mob{display:none}
+.mnav{display:none}
+.hero{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:740px;border-bottom:1px solid var(--line)}
+.hero .ph{border:0;border-right:1px solid var(--line);min-height:740px}
+.hv{position:relative;min-height:740px;border-right:1px solid var(--line);background:var(--ph);overflow:hidden}
+.hv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hv::after{content:"";position:absolute;inset:0;background:rgba(23,31,19,.28);pointer-events:none}
+.hero-t{display:flex;flex-direction:column;justify-content:flex-end;padding:0 72px 96px;gap:20px}
+.hero-t p{max-width:440px;color:var(--ivory)}
+.hero-t .btn{align-self:flex-start;margin-top:12px}
+.sec{padding:96px 56px;border-bottom:1px solid var(--line)}
+.head{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.head p{max-width:460px;color:var(--ivory2)}
+.preview{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;margin-top:56px}
+.card{display:flex;flex-direction:column;gap:14px;text-align:center}
+.card .ph{aspect-ratio:3/4;padding:16px}
+.zoom{overflow:hidden;border:1px solid var(--line);aspect-ratio:3/4}
+.zoom img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.cname{overflow-wrap:anywhere}
+.cdesc{font-size:14px;color:var(--ivory2);overflow-wrap:anywhere}
+.cbot{margin-top:auto;display:flex;flex-direction:column;gap:14px;align-items:center;padding-top:6px}
+.price{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory2);min-height:28px;display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:10px}
+.price s{opacity:.75}.price strong{font-weight:500;color:var(--ivory)}
+.badge{border:1px solid var(--gold);color:var(--ivory);padding:1px 8px;font-size:11px;white-space:nowrap}
+.sample{opacity:.6;border:1px dashed var(--gold);color:var(--ivory);min-height:44px;width:100%;max-width:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--sans);font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:6px 8px}
+.sample i{font-style:normal;font-size:9px;color:var(--ivory2)}
+.cbot .btn{width:100%;max-width:240px;text-align:center;padding:0 12px;font-size:10px}
+.cta{text-align:center;margin-top:56px}
+.about{display:grid;grid-template-columns:40% 60%;border-bottom:1px solid var(--line)}
+.arc{padding:0;border-right:1px solid var(--line);display:flex;align-items:flex-end}
+.arc .ph{width:100%;height:100%;min-height:640px;border:1px solid var(--line);border-bottom:0;border-left:0;border-radius:50% 50% 0 0 / 30% 30% 0 0}
+.arc img{width:100%;height:100%;min-height:640px;object-fit:cover;object-position:center 30%;display:block;border:1px solid var(--line);border-bottom:0;border-left:0;border-radius:50% 50% 0 0 / 30% 30% 0 0}
+.about-t{padding:72px 72px 72px;display:flex;flex-direction:column;justify-content:space-between;gap:120px}
+.about-t .low{display:flex;flex-direction:column;gap:24px;align-items:flex-start;max-width:520px}
+.visit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;max-width:760px;margin:64px auto 0;text-align:center}
+.visit h3{font-size:22px;margin-bottom:10px}
+.visit p{color:var(--ivory)}
+.strip{display:grid;grid-template-columns:1fr auto 1.2fr;gap:40px;align-items:center;padding:40px 56px;border-bottom:1px solid var(--line)}
+.strip h2{font-size:30px}
+.strip p{font-size:14px;color:var(--ivory2)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1.4fr 1fr;gap:40px;padding:64px 56px 48px;background:var(--deep)}
+.foot h4{margin:0 0 10px;font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory2)}
+.foot a,.foot p{font-size:15px;display:block;overflow-wrap:anywhere}
+.foot a{min-height:32px;transition:color .25s ease}
+.foot .fb{font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1}
+.copy{padding:20px 56px;border-top:1px solid var(--line);background:var(--deep);font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory2)}
+.sep{height:120px;display:flex;align-items:center;justify-content:center;gap:24px;padding:0 56px;border-bottom:1px solid var(--line)}
+.sep .ln{flex:1;height:1px;background:var(--line)}
+.sep svg{flex:none;max-width:50%;height:auto}
+@media (max-width:860px){.sep{padding:0 20px;gap:12px}}
+@media (max-width:860px){.sep{height:64px}}
+.anim{border-bottom:1px solid var(--line)}
+.anim video{background:var(--ph)}
+.anim .ph{width:100%;aspect-ratio:21/9;border:0;padding:24px}
+.anim img,.anim video{width:100%;aspect-ratio:21/9;object-fit:cover;display:block}
+@media (max-width:860px){.anim .ph,.anim img,.anim video{aspect-ratio:4/3}}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-t{padding:0 48px 72px}h1{font-size:52px}.hdr{padding:24px 32px}}
+@media (max-width:860px){
+.nav{display:none}.hdr{grid-template-columns:1fr auto;padding:16px 20px}.brand{text-align:left}.brand b{font-size:36px}
+.mob{display:flex;gap:4px;align-items:center}
+.mob a,.mob button{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:none;border:0;color:var(--ivory);cursor:pointer;padding:0 10px}
+.mnav{position:absolute;top:100%;left:0;right:0;background:var(--deep);border-bottom:1px solid var(--line);padding:8px 20px 16px;display:flex;flex-direction:column;opacity:0;transform:translateY(-8px);visibility:hidden;pointer-events:none;transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s}
+.mnav.open{opacity:1;transform:none;visibility:visible;pointer-events:auto;transition-delay:0s}
+.hero{grid-template-columns:1fr;min-height:0}
+.hero .ph,.hv{min-height:0;aspect-ratio:4/5;max-height:440px;width:100%;border-right:0;border-bottom:1px solid var(--line)}
+h1{font-size:38px}h2{font-size:34px}
+.hero-t{padding:40px 24px 56px}
+.sec{padding:64px 20px}
+.grid{gap:24px 16px;margin-top:40px}
+.about{grid-template-columns:1fr}.arc{border-right:0;border-bottom:1px solid var(--line)}
+.arc .ph,.arc img{min-height:420px}.about-t{padding:48px 24px;gap:40px}
+.visit{grid-template-columns:1fr;gap:36px}
+.strip{grid-template-columns:1fr;gap:20px;padding:40px 20px;text-align:center}.strip .btn{justify-self:center}
+.foot{grid-template-columns:1fr 1fr;padding:48px 20px 32px}.copy{padding:20px}}
+@media (max-width:420px){.card h3{font-size:21px}.cbot .btn,.sample{font-size:9px;letter-spacing:.08em}.foot{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.btn:hover,.zoom:hover img{transform:none!important}.mnav{transform:none!important}}
+</style>
+</helmet>
+<div>
+<a href="#vitrine" class="label" style="position:absolute;left:-9999px">Ir para o conteúdo</a>
+<main>
+<section class="hero" aria-label="Apresentação">
+<header class="hdr" onKeyDown="{{onKey}}">
+<nav class="nav" aria-label="Principal"><a href="#vitrine">Vitrine</a><a href="#sobre">Sobre</a></nav>
+<a class="brand" href="#" aria-label="Floricultura Helide — início"><b>Helide</b><span>Floricultura</span></a>
+<nav class="nav r" aria-label="Contato"><a href="#visite">Visite</a><a href="{{wa}}" target="_blank" rel="noopener">WhatsApp</a></nav>
+<div class="mob">
+<a href="{{wa}}" target="_blank" rel="noopener">WhatsApp</a>
+<button type="button" id="menubtn" onClick="{{toggleMenu}}" aria-expanded="{{menuOpen}}" aria-controls="mnav">{{menuLabel}}</button>
+</div>
+<nav class="mnav {{menuClass}}" id="mnav" aria-label="Menu"><a href="#vitrine" onClick="{{closeMenu}}">Vitrine</a><a href="#sobre" onClick="{{closeMenu}}">Sobre</a><a href="#visite" onClick="{{closeMenu}}">Visite</a></nav>
+</header>
+<div class="hv"><video src="./assets/481a4ea190d3d1e1a4c8b33983fecbfa.mp4" muted="{{ true }}" autoPlay="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="auto" aria-label="Vídeo de um buquê de rosas vermelhas"></video></div>
+<div class="hero-t">
+<h1>Flores para<br>expressar carinho</h1>
+<p>Conheça a Floricultura Helide, em Sertãozinho. Converse com a gente sobre as opções de flores e buquês.</p>
+<a class="btn" href="{{wa}}" target="_blank" rel="noopener">Fale com a Helide</a>
+</div>
+</section>
+
+<section class="sec" id="vitrine" aria-labelledby="t-vitrine">
+<div class="head">
+<span class="label">Flores e carinho</span>
+<h2 id="t-vitrine">Nossa vitrine</h2>
+<p>Estamos preparando nosso catálogo por aqui. Consulte as opções disponíveis pelo WhatsApp.</p>
+<sc-if value="{{showPreview}}" hint-placeholder-val="{{ true }}"><span class="preview">Prévia da estrutura do catálogo</span></sc-if>
+</div>
+<div class="grid">
+<sc-for list="{{cards}}" as="item" hint-placeholder-count="4">
+<article class="card">
+<sc-if value="{{item.hasPhoto}}" hint-placeholder-val="{{ false }}"><div class="zoom"><img src="{{item.photo}}" alt="{{item.alt}}" width="600" height="800"></div></sc-if>
+<sc-if value="{{item.noPhoto}}" hint-placeholder-val="{{ false }}"><div class="ph" role="img" aria-label="Foto do produto (espaço reservado)"><span class="cap">Foto do produto</span></div></sc-if>
+<sc-if value="{{item.hasHref}}" hint-placeholder-val="{{ false }}"><h3 class="cname">{{item.name}}</h3></sc-if>
+<sc-if value="{{item.hasDesc}}" hint-placeholder-val="{{ false }}"><p class="cdesc">{{item.desc}}</p></sc-if>
+<sc-if value="{{item.hasHref}}" hint-placeholder-val="{{ false }}"><div class="cbot">
+<sc-if value="{{item.hasHref}}" hint-placeholder-val="{{ false }}"><div class="price">
+<sc-if value="{{item.isConsult}}" hint-placeholder-val="{{ false }}"><span>Consulte o valor</span></sc-if>
+<sc-if value="{{item.isRegular}}" hint-placeholder-val="{{ false }}"><strong>{{item.regularFmt}}</strong></sc-if>
+<sc-if value="{{item.isPromo}}" hint-placeholder-val="{{ false }}"><s>{{item.regularFmt}}</s><strong>{{item.promoFmt}}</strong></sc-if>
+<sc-if value="{{item.hasBadge}}" hint-placeholder-val="{{ false }}"><span class="badge">−{{item.pct}}%</span></sc-if>
+</div></sc-if>
+<sc-if value="{{item.hasHref}}" hint-placeholder-val="{{ false }}"><a class="btn" href="{{item.href}}" target="_blank" rel="noopener">Consultar pelo WhatsApp</a></sc-if>
+</div></sc-if>
+</article>
+</sc-for>
+</div>
+<div class="cta"><a class="btn" href="{{wa}}" target="_blank" rel="noopener">Consultar opções pelo WhatsApp</a></div>
+</section>
+
+<section class="about" id="sobre" aria-labelledby="t-sobre">
+<div class="arc"><img src="./assets/baf0fc3395357264bd52cb55e22dc755.png" alt="Buquê de rosas vermelhas, rosas e brancas com mosquitinho e eucalipto, em papel bege com laço vinho" width="1122" height="1402"></div>
+<div class="about-t">
+<div style="display:flex;flex-direction:column;gap:12px"><span class="label">Sobre a Helide</span><h2 id="t-sobre">Flores e proximidade</h2></div>
+<div class="low">
+<p>A Floricultura Helide está em Sertãozinho, no interior de São Paulo. Entre em contato para conhecer as opções de flores e buquês e conversar sobre o que você procura.</p>
+<a class="btn" href="{{wa}}" target="_blank" rel="noopener">Converse com a gente</a>
+</div>
+</div>
+</section>
+
+<div class="sep" aria-hidden="true"><i class="ln"></i><svg width="240" height="48" viewBox="0 0 120 48" fill="none" stroke="#AB9860" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><g id="half"><path d="M8 24H52"></path><path d="M44 24Q38 14 26 12Q30 22 44 24Z"></path><path d="M44 24Q38 34 26 36Q30 26 44 24Z"></path><path d="M28 24Q23 17 14 16Q17 23 28 24Z"></path><path d="M28 24Q23 31 14 32Q17 25 28 24Z"></path><circle cx="6" cy="24" r="1.5"></circle></g><g transform="translate(120 0) scale(-1 1)"><path d="M8 24H52"></path><path d="M44 24Q38 14 26 12Q30 22 44 24Z"></path><path d="M44 24Q38 34 26 36Q30 26 44 24Z"></path><path d="M28 24Q23 17 14 16Q17 23 28 24Z"></path><path d="M28 24Q23 31 14 32Q17 25 28 24Z"></path><circle cx="6" cy="24" r="1.5"></circle></g><path d="M60 19L65 24L60 29L55 24Z" fill="#AB9860"></path></svg><i class="ln"></i></div>
+
+<section class="anim" aria-label="Imagem animada">
+<video src="./assets/51ecec9db73cfdc3b0dd710b2f7c76c3.mp4" muted="{{ true }}" autoPlay="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="auto" aria-label="Vídeo de flores do campo balançando com a brisa"></video>
+</section>
+
+<section class="sec" id="visite" aria-labelledby="t-visite">
+<div class="head"><span class="label">Em Sertãozinho</span><h2 id="t-visite">Visite a Helide</h2></div>
+<div class="visit">
+<div><h3>Endereço</h3><p>Rua Voluntário Otto Gomes Martins, 1576<br>Sertãozinho/SP — CEP 14160-730</p></div>
+<div><h3>Horários</h3><p>Segunda a sexta: 8h às 17h30<br>Sábado: 8h às 16h30</p></div>
+</div>
+<div class="cta" style="margin-top:48px"><a class="btn" href="{{maps}}" target="_blank" rel="noopener">Como chegar</a></div>
+</section>
+
+<section class="strip" aria-label="Entregas">
+<h2>Deseja consultar uma entrega?</h2>
+<a class="btn" href="{{wa}}" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+<p>Fazemos entregas. Consulte região atendida, disponibilidade, prazo e valor pelo WhatsApp.</p>
+</section>
+</main>
+
+<footer>
+<div class="foot">
+<div><span class="fb">Helide</span><p style="margin-top:8px;color:var(--ivory2)">Floricultura em Sertãozinho/SP</p></div>
+<nav aria-label="Rodapé"><h4>Navegação</h4><a href="#vitrine">Vitrine</a><a href="#sobre">Sobre</a><a href="#visite">Visite</a></nav>
+<div><h4>Contato</h4><a href="{{wa}}" target="_blank" rel="noopener">WhatsApp (16) 99142-9242</a><a href="mailto:floriculturahelide@gmail.com">floriculturahelide@gmail.com</a></div>
+<div><h4>Siga</h4><a href="https://www.instagram.com/floriculturahelide/" target="_blank" rel="noopener">@floriculturahelide</a></div>
+</div>
+<div class="copy">Floricultura Helide © {{year}}</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3300}}'>
+const CONFIG = {
+  name: 'Floricultura Helide',
+  whatsapp: '5516991429242',
+  address: 'Rua Voluntário Otto Gomes Martins, 1576, Sertãozinho/SP, 14160-730',
+  // Produtos reais: adicione objetos { id, photo, alt, name, desc, price, promo, message }.
+  // Enquanto vazio, a prévia (placeholders) aparece automaticamente.
+  products: []
+};
+const PLACEHOLDERS = [
+  { id: 'p1', name: '[Nome do produto]', desc: '[Descrição breve]', photo: './assets/a18f51b88dde31cb3a1fc3856ba5a0a8.png', alt: 'Planta com flores rosa embrulhada em papel rosa, com laço rosa' },
+  { id: 'p2', name: '[Nome do produto]', photo: './assets/2f4faa911e971a4f6eb1f415f3f74c75.png', alt: 'Buquê de lírios rosa com mosquitinho em papel rosa' },
+  { id: 'p3', name: '[Nome do produto]', desc: '[Descrição breve]', photo: './assets/08603c3b6a6b93ee5a7798f0d0bc4e0c.png', alt: 'Buquê de rosas vermelhas com mosquitinho e laço vermelho' },
+  { id: 'p4', name: '[Nome do produto]', photo: './assets/d46a585b239c6837682d15e0047234be.png', alt: 'Buquê de rosas brancas com mosquitinho azul' }
+];
+const ok = (n) => typeof n === 'number' && isFinite(n) && n > 0;
+const brl = (n) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(n);
+class Component extends DCLogic {
+  state = { menu: false };
+  buildCard(p, placeholder) {
+    const hasReg = ok(p.price);
+    const promo = hasReg && ok(p.promo) && p.promo < p.price;
+    const pct = promo ? Math.floor(((p.price - p.promo) / p.price) * 100) : 0;
+    const msg = p.message || ('Olá! Gostaria de consultar sobre: ' + p.name);
+    const hasPhoto = !!p.photo;
+    return {
+      id: p.id, name: p.name, desc: p.desc || '', hasDesc: !!p.desc && !placeholder,
+      photo: p.photo || '', alt: p.alt || p.name, hasPhoto,
+      placeholder: placeholder, noPhoto: !hasPhoto,
+      isPlaceholder: placeholder,
+      isConsult: !placeholder && !hasReg,
+      isRegular: !placeholder && hasReg && !promo,
+      isPromo: !placeholder && promo,
+      hasBadge: !placeholder && promo && pct > 0,
+      regularFmt: hasReg ? brl(p.price) : '', promoFmt: promo ? brl(p.promo) : '', pct,
+      hasHref: !placeholder,
+      href: 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg)
+    };
+  }
+  componentDidMount() { this.tries = 0; this.initAnim(); }
+  componentWillUnmount() {
+    if (this.raf) cancelAnimationFrame(this.raf);
+    if (this.ctx) this.ctx.revert();
+  }
+  initAnim() {
+    const g = window.gsap, ST = window.ScrollTrigger;
+    if (!g || !ST) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!document.querySelector('.hero-t h1') || !document.querySelector('.card')) {
+      if (this.tries++ < 40) this.raf = requestAnimationFrame(() => this.initAnim());
+      return;
+    }
+    g.registerPlugin(ST);
+    const scrollable = document.documentElement.scrollHeight > window.innerHeight + 60;
+    const ease = 'power2.out';
+    const clear = 'transform,opacity';
+    this.ctx = g.context(() => {
+      g.from('.hero-t > *', { opacity: 0, y: 16, duration: 0.7, ease, stagger: 0.12, delay: 0.05, clearProps: clear });
+      if (!scrollable) return;
+      const trig = (t) => ({ trigger: t, start: 'top 88%', once: true });
+      g.utils.toArray('.head').forEach((h) => g.from(h.children, { opacity: 0, y: 16, duration: 0.6, ease, stagger: 0.08, clearProps: clear, scrollTrigger: trig(h) }));
+      g.set('.card', { opacity: 0, y: 16 });
+      ST.batch('.card', { start: 'top 92%', once: true, onEnter: (b) => g.to(b, { opacity: 1, y: 0, duration: 0.6, ease, stagger: 0.1, clearProps: clear }) });
+      [['.arc img', 20], ['.about-t > *', 16], ['.anim video', 0], ['.cta', 12], ['.visit > div', 16], ['.strip > *', 12], ['.foot > *', 12]].forEach(([sel, y]) => {
+        g.utils.toArray(sel).forEach((el) => g.from(el, { opacity: 0, y, duration: 0.7, ease, clearProps: clear, scrollTrigger: trig(el) }));
+      });
+      g.utils.toArray('.sep .ln').forEach((el, i) => g.from(el, { scaleX: 0, transformOrigin: i ? 'left center' : 'right center', duration: 0.8, ease, clearProps: 'transform', scrollTrigger: trig(el) }));
+      g.from('.sep svg', { opacity: 0, duration: 0.7, ease, clearProps: 'opacity', scrollTrigger: trig('.sep') });
+    });
+  }
+  renderVals() {
+    const real = CONFIG.products.filter((p) => p && p.name);
+    const usePh = real.length === 0;
+    const cards = usePh ? PLACEHOLDERS.map((p) => this.buildCard(p, true)) : real.map((p) => this.buildCard(p, false));
+    return {
+      wa: 'https://wa.me/' + CONFIG.whatsapp,
+      maps: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.address),
+      year: new Date().getFullYear(),
+      cards, showPreview: usePh,
+      menuOpen: this.state.menu,
+      menuClass: this.state.menu ? 'open' : '',
+      onKey: (e) => {
+        if (e.key === 'Escape' && this.state.menu) {
+          this.setState({ menu: false });
+          const b = document.getElementById('menubtn');
+          if (b) b.focus();
+        }
+      },
+      menuLabel: this.state.menu ? 'Fechar' : 'Menu',
+      toggleMenu: () => this.setState({ menu: !this.state.menu }),
+      closeMenu: () => this.setState({ menu: false })
+    };
+  }
+}
+</script>
+</body>
+</html>
